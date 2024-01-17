@@ -1,7 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import pages.components.ResultModalWindowComponent;
+import pages.components.ResultTextBoxComponent;
 
 import static com.codeborne.selenide.Selenide.*;
 
@@ -22,7 +22,7 @@ public class TextBoxPage {
             permanentAddressInput = $("#permanentAddress"),
             submitButton = $("#submit");
 
-    ResultModalWindowComponent resultModalWindowComponent = new ResultModalWindowComponent();
+    ResultTextBoxComponent resultTextBoxComponent = new ResultTextBoxComponent();
 
     public TextBoxPage setFullName(String value) {
         fullNameInput.setValue(value);
@@ -49,7 +49,7 @@ public class TextBoxPage {
     }
 
     public TextBoxPage checkTextBoxResult (String key, String value) {
-        resultModalWindowComponent.checkTextBoxResult(key, value);
+        resultTextBoxComponent.checkTextBoxResult(key, value);
         return this;
     }
 }

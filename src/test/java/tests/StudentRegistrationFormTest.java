@@ -4,7 +4,7 @@ import helpers.BaseTestSettings;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 
-public class TestStudentRegistrationForm extends BaseTestSettings {
+public class StudentRegistrationFormTest extends BaseTestSettings {
 
     RegistrationPage registrationPage = new RegistrationPage();
 
